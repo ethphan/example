@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Example</p>
+      </header>
+      <div class="form-title">
+        <h1>Example form</h1>
+      </div>
+
+      <div class="picture">
+        <ul class="pics">
+          <li><img src="./img/img1.jpg" alt="img1" class="img1" /></li>
+          <li>
+            <svg width="200" height="200">
+              <circle
+                cx="100"
+                cy="100"
+                r="80"
+                stroke="#876397"
+                stroke-width="4"
+                fill="#e9caf7"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form" id="form" method="POST">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John"
+            required
+          />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-control">
+          <div class="opt1">
+            <label for="opt1">Option 1</label>
+            <input type="radio" id="opt1" name="option" />
+          </div>
+          <div class="opt2">
+            <label for="opt2">Option 2</label>
+            <input type="radio" id="opt2" name="option" />
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="attachment">Attachment</label>
+          <input type="file" id="attachment" name="attachment" required />
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <div class="more-info">
+        <p class="read-more">Read more</p>
+        <div class="quote">
+          <blockquote>
+            <strong
+              >“The most beautiful experience we can have is the
+              mysterious”</strong
+            >
+            - Albert Einstein
+          </blockquote>
+        </div>
+      </div>
+      <footer>&copy; 2020 Example</footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
